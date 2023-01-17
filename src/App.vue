@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="z-n1 position-absolute bg">
+    <SideBar></SideBar>
+    <Button></Button>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/BootstrapButton.vue'
+import SideBar from './components/SideBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SideBar,
+    Button
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.bg {
+  float: right;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(155deg,#3E52BE66,#9031BDB3, #C72F2FFF);
 }
 </style>
+
