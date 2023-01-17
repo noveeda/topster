@@ -1,30 +1,32 @@
 <template>
-  <div class="z-n1 position-absolute bg">
-    <SideBar></SideBar>
-    <Button></Button>
+  <div id="app">
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view/>
   </div>
-  
 </template>
 
-<script>
-import Button from './components/BootstrapButton.vue'
-import SideBar from './components/SideBar.vue'
-
-export default {
-  name: 'App',
-  components: {
-    SideBar,
-    Button
-  }
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-</script>
 
-<style scoped>
-.bg {
-  float: right;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(155deg,#3E52BE66,#9031BDB3, #C72F2FFF);
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
-
