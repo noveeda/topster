@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="main">
+      <MenuTap></MenuTap>
+      <PosterList></PosterList>
+      <PosterReview></PosterReview>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuTap from './components/MenuTap.vue';
+import PosterList from './components/PosterList.vue';
+import PosterReview from './components/PosterReview.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuTap, PosterList, PosterReview
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+
+.main{
+  background-color: #202020;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
 }
 </style>
