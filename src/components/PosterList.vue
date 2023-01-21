@@ -24,7 +24,7 @@ export default {
   margin-top: 5vh;
   margin-left: 5vh;
   box-shadow: 1vh 1vh 0.25vh 0.125vh rgba(0, 0, 32, 0.443);
-  
+
   background-color: black; 
   /* 2차원 레이아웃을 위한 grid */
   display: grid;
